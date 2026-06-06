@@ -43,7 +43,7 @@ export default function Footer() {
                     <ul className="space-y-3 text-sm text-cream/80">
                         <li className="flex items-start gap-2"><MapPin size={16} className="mt-0.5 text-saffron" /> Ahmedabad, Gujarat, India</li>
                         <li className="flex items-center gap-2"><Mail size={16} className="text-saffron" /> hello@aksharcore.live</li>
-                        <li className="flex items-center gap-2"><Phone size={16} className="text-saffron" /> +91 00000 00000</li>
+                        <li className="flex items-center gap-2"><Phone size={16} className="text-saffron" /> +91 79840 17213</li>
                     </ul>
                     <div className="flex gap-3 mt-5">
                         {[FaLinkedin, FaInstagram].map((Icon, i) => (
