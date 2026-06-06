@@ -1,6 +1,6 @@
 import { Globe, Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
-import { FaGithub as Github, FaInstagram as Instagram, FaTwitter as Twitter, FaLinkedin as Linkedin } from "react-icons/fa6";
+import { FaInstagram as Instagram, FaLinkedin as Linkedin } from "react-icons/fa6";
 import LotusDivider from "../components/site/lotus-divider";
 
 export default function Contact() {
