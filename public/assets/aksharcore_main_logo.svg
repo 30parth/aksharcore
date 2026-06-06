@@ -1,0 +1,111 @@
+<svg width="720" height="240" viewBox="0 0 720 240" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Aksharcore Technologies - Main Logo</title>
+
+  <!-- Soft background -->
+  <rect width="720" height="240" fill="#FDF7EE"/>
+
+  <!-- Corner brackets -->
+  <path d="M18 18 L18 32 L32 32" fill="none" stroke="#D4892A" stroke-width="1" opacity="0.5"/>
+  <path d="M702 18 L702 32 L688 32" fill="none" stroke="#D4892A" stroke-width="1" opacity="0.5"/>
+  <path d="M18 222 L18 208 L32 208" fill="none" stroke="#D4892A" stroke-width="1" opacity="0.5"/>
+  <path d="M702 222 L702 208 L688 208" fill="none" stroke="#D4892A" stroke-width="1" opacity="0.5"/>
+
+  <!-- Outer rings -->
+  <circle cx="130" cy="120" r="108" fill="none" stroke="#E8A83A" stroke-width="0.5" opacity="0.25" stroke-dasharray="3 3"/>
+  <circle cx="130" cy="120" r="100" fill="none" stroke="#D4892A" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Lotus layer 1 -->
+  <g opacity="0.28">
+    <ellipse cx="130" cy="52" rx="10" ry="27" fill="#F5BE60"/>
+    <ellipse cx="130" cy="52" rx="10" ry="27" fill="#F5BE60" transform="rotate(30 130 120)"/>
+    <ellipse cx="130" cy="52" rx="10" ry="27" fill="#F5BE60" transform="rotate(60 130 120)"/>
+    <ellipse cx="130" cy="52" rx="10" ry="27" fill="#F5BE60" transform="rotate(90 130 120)"/>
+    <ellipse cx="130" cy="52" rx="10" ry="27" fill="#F5BE60" transform="rotate(120 130 120)"/>
+    <ellipse cx="130" cy="52" rx="10" ry="27" fill="#F5BE60" transform="rotate(150 130 120)"/>
+    <ellipse cx="130" cy="52" rx="10" ry="27" fill="#F5BE60" transform="rotate(180 130 120)"/>
+    <ellipse cx="130" cy="52" rx="10" ry="27" fill="#F5BE60" transform="rotate(210 130 120)"/>
+    <ellipse cx="130" cy="52" rx="10" ry="27" fill="#F5BE60" transform="rotate(240 130 120)"/>
+    <ellipse cx="130" cy="52" rx="10" ry="27" fill="#F5BE60" transform="rotate(270 130 120)"/>
+    <ellipse cx="130" cy="52" rx="10" ry="27" fill="#F5BE60" transform="rotate(300 130 120)"/>
+    <ellipse cx="130" cy="52" rx="10" ry="27" fill="#F5BE60" transform="rotate(330 130 120)"/>
+  </g>
+
+  <!-- Lotus layer 2 -->
+  <g opacity="0.60">
+    <ellipse cx="130" cy="59" rx="9" ry="23" fill="#F0A830" transform="rotate(15 130 120)"/>
+    <ellipse cx="130" cy="59" rx="9" ry="23" fill="#F0A830" transform="rotate(45 130 120)"/>
+    <ellipse cx="130" cy="59" rx="9" ry="23" fill="#F0A830" transform="rotate(75 130 120)"/>
+    <ellipse cx="130" cy="59" rx="9" ry="23" fill="#F0A830" transform="rotate(105 130 120)"/>
+    <ellipse cx="130" cy="59" rx="9" ry="23" fill="#F0A830" transform="rotate(135 130 120)"/>
+    <ellipse cx="130" cy="59" rx="9" ry="23" fill="#F0A830" transform="rotate(165 130 120)"/>
+    <ellipse cx="130" cy="59" rx="9" ry="23" fill="#F0A830" transform="rotate(195 130 120)"/>
+    <ellipse cx="130" cy="59" rx="9" ry="23" fill="#F0A830" transform="rotate(225 130 120)"/>
+    <ellipse cx="130" cy="59" rx="9" ry="23" fill="#F0A830" transform="rotate(255 130 120)"/>
+    <ellipse cx="130" cy="59" rx="9" ry="23" fill="#F0A830" transform="rotate(285 130 120)"/>
+    <ellipse cx="130" cy="59" rx="9" ry="23" fill="#F0A830" transform="rotate(315 130 120)"/>
+    <ellipse cx="130" cy="59" rx="9" ry="23" fill="#F0A830" transform="rotate(345 130 120)"/>
+  </g>
+
+  <!-- Lotus layer 3 -->
+  <g opacity="0.88">
+    <ellipse cx="130" cy="70" rx="8" ry="18" fill="#E8901A"/>
+    <ellipse cx="130" cy="70" rx="8" ry="18" fill="#E8901A" transform="rotate(45 130 120)"/>
+    <ellipse cx="130" cy="70" rx="8" ry="18" fill="#E8901A" transform="rotate(90 130 120)"/>
+    <ellipse cx="130" cy="70" rx="8" ry="18" fill="#E8901A" transform="rotate(135 130 120)"/>
+    <ellipse cx="130" cy="70" rx="8" ry="18" fill="#E8901A" transform="rotate(180 130 120)"/>
+    <ellipse cx="130" cy="70" rx="8" ry="18" fill="#E8901A" transform="rotate(225 130 120)"/>
+    <ellipse cx="130" cy="70" rx="8" ry="18" fill="#E8901A" transform="rotate(270 130 120)"/>
+    <ellipse cx="130" cy="70" rx="8" ry="18" fill="#E8901A" transform="rotate(315 130 120)"/>
+  </g>
+
+  <!-- Lotus layer 4 innermost -->
+  <g opacity="1">
+    <ellipse cx="130" cy="82" rx="6" ry="12" fill="#C87018" transform="rotate(22.5 130 120)"/>
+    <ellipse cx="130" cy="82" rx="6" ry="12" fill="#C87018" transform="rotate(67.5 130 120)"/>
+    <ellipse cx="130" cy="82" rx="6" ry="12" fill="#C87018" transform="rotate(112.5 130 120)"/>
+    <ellipse cx="130" cy="82" rx="6" ry="12" fill="#C87018" transform="rotate(157.5 130 120)"/>
+    <ellipse cx="130" cy="82" rx="6" ry="12" fill="#C87018" transform="rotate(202.5 130 120)"/>
+    <ellipse cx="130" cy="82" rx="6" ry="12" fill="#C87018" transform="rotate(247.5 130 120)"/>
+    <ellipse cx="130" cy="82" rx="6" ry="12" fill="#C87018" transform="rotate(292.5 130 120)"/>
+    <ellipse cx="130" cy="82" rx="6" ry="12" fill="#C87018" transform="rotate(337.5 130 120)"/>
+  </g>
+
+  <!-- Flower center -->
+  <circle cx="130" cy="120" r="34" fill="#FFF3E0" stroke="#C87820" stroke-width="1.4"/>
+  <circle cx="130" cy="120" r="26" fill="#FFFAF2" stroke="#D4892A" stroke-width="0.8"/>
+
+  <!-- Swaminarayan Tilak: clean U shape -->
+  <path d="M119 103 L119 123 Q119 137 130 137 Q141 137 141 123 L141 103" fill="none" stroke="#E8C020" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Single clean red bindu only — no surrounding dots -->
+  <circle cx="130" cy="121" r="10" fill="#CC2020"/>
+
+  <!-- Vertical divider -->
+  <line x1="258" y1="44" x2="258" y2="196" stroke="#D4892A" stroke-width="0.8" opacity="0.45"/>
+  <circle cx="258" cy="44" r="2.5" fill="#D4892A" opacity="0.45"/>
+  <circle cx="258" cy="196" r="2.5" fill="#D4892A" opacity="0.45"/>
+
+  <!-- SHREE SWAMINARAYAN label -->
+  <text x="284" y="72" font-family="serif" font-size="11" fill="#C8873A" letter-spacing="4">— SHREE SWAMINARAYAN —</text>
+
+  <!-- Main company name -->
+  <text x="282" y="116" font-family="serif" font-size="46" font-weight="700" fill="#6B3209" letter-spacing="3">AKSHARCORE</text>
+
+  <!-- Double rule under name -->
+  <line x1="282" y1="124" x2="688" y2="124" stroke="#C87820" stroke-width="1.4"/>
+  <line x1="282" y1="128" x2="560" y2="128" stroke="#E8A83A" stroke-width="0.5" opacity="0.55"/>
+
+  <!-- TECHNOLOGIES -->
+  <text x="284" y="153" font-family="serif" font-size="15" fill="#B8722A" letter-spacing="8">TECHNOLOGIES</text>
+
+  <!-- Three dots ornament -->
+  <circle cx="288" cy="168" r="2.2" fill="#D4892A"/>
+  <circle cx="297" cy="168" r="2.2" fill="#D4892A" opacity="0.6"/>
+  <circle cx="306" cy="168" r="2.2" fill="#D4892A" opacity="0.3"/>
+
+  <!-- Tagline -->
+  <text x="284" y="188" font-family="serif" font-size="12" fill="#A0622A" font-style="italic">Rooted in values, driven by innovation</text>
+
+  <!-- URL -->
+  <text x="284" y="206" font-family="sans-serif" font-size="11" fill="#C8873A" letter-spacing="1.5">aksharcore.live</text>
+</svg>
