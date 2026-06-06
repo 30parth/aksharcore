@@ -35,7 +35,7 @@ export default function Footer() {
                         <li><Link to="/" className="hover:text-saffron transition">Home</Link></li>
                         <li><Link to="/about" className="hover:text-saffron transition">About</Link></li>
                         <li><Link to="/services" className="hover:text-saffron transition">Services</Link></li>
-                        <li><Link to="/portfolio" className="hover:text-saffron transition">Portfolio</Link></li>
+                        {/* <li><Link to="/portfolio" className="hover:text-saffron transition">Portfolio</Link></li> */}
                         <li><Link to="/contact" className="hover:text-saffron transition">Contact</Link></li>
                     </ul>
                 </div>

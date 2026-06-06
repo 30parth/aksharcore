@@ -112,9 +112,9 @@ export default function Home() {
                                     <p className="text-xs uppercase tracking-widest text-gold font-semibold mb-2">{p.tag}</p>
                                     <h3 className="text-xl font-display mb-2">{p.name}</h3>
                                     <p className="text-sm text-brown mb-4">{p.desc}</p>
-                                    <Link to="/portfolio" className="text-saffron font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
+                                    {/* <Link to="/portfolio" className="text-saffron font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
                                         View Project <ArrowRight size={14} />
-                                    </Link>
+                                    </Link> */}
                                 </div>
                             </article>
                         ))}

@@ -6,7 +6,7 @@ const links = [
     { to: "/" as const, label: "Home" },
     { to: "/about" as const, label: "About" },
     { to: "/services" as const, label: "Services" },
-    { to: "/portfolio" as const, label: "Portfolio" },
+    // { to: "/portfolio" as const, label: "Portfolio" },
     { to: "/contact" as const, label: "Contact" },
 ];
 
@@ -45,15 +45,13 @@ export default function Navbar() {
                             <Link
                                 key={l.to}
                                 to={l.to}
-                                className={`relative px-4 py-2 text-sm font-semibold transition-colors duration-200 group ${
-                                    isActive ? "text-saffron" : "text-maroon hover:text-saffron"
-                                }`}
+                                className={`relative px-4 py-2 text-sm font-semibold transition-colors duration-200 group ${isActive ? "text-saffron" : "text-maroon hover:text-saffron"
+                                    }`}
                             >
                                 {l.label}
                                 <span
-                                    className={`absolute bottom-0 left-4 right-4 h-[2px] bg-saffron transition-all duration-300 origin-center ${
-                                        isActive ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-70"
-                                    }`}
+                                    className={`absolute bottom-0 left-4 right-4 h-[2px] bg-saffron transition-all duration-300 origin-center ${isActive ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-70"
+                                        }`}
                                 />
                             </Link>
                         );
@@ -82,11 +80,10 @@ export default function Navbar() {
                                     key={l.to}
                                     to={l.to}
                                     onClick={() => setOpen(false)}
-                                    className={`relative py-2 pl-3 text-base font-medium transition-colors duration-200 border-l-2 ${
-                                        isActive
+                                    className={`relative py-2 pl-3 text-base font-medium transition-colors duration-200 border-l-2 ${isActive
                                             ? "text-saffron border-saffron bg-saffron/5"
                                             : "text-maroon border-transparent hover:text-saffron hover:border-saffron/50"
-                                    }`}
+                                        }`}
                                 >
                                     {l.label}
                                 </Link>
