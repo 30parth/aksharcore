@@ -1,4 +1,4 @@
-import { Sparkles, ShieldCheck, Rocket, Code2, Cloud, Palette, ArrowRight, Lightbulb, HandHeart, Layers } from "lucide-react";
+import { Sparkles, ShieldCheck, Rocket, Code2, Cloud, Palette, ArrowRight, Lightbulb, HandHeart } from "lucide-react";
 import { Link } from "react-router-dom";
 import SectionHeader from "../components/site/section-header";
 import LotusDivider from "../components/site/lotus-divider";
@@ -16,11 +16,11 @@ const features = [
     { icon: HandHeart, title: "Partnership Mindset", desc: "We don't deliver projects — we walk alongside you through the entire journey." },
 ];
 
-const work = [
-    { name: "Sankalp ERP", tag: "Web · SaaS", desc: "Modern ERP suite for mid-market manufacturers." },
-    { name: "Yatra Mobile", tag: "iOS · Android", desc: "Pilgrimage planner with offline maps and bookings." },
-    { name: "Pragati Studio", tag: "UI/UX · Branding", desc: "Design system for a fast-growing fintech." },
-];
+// const work = [
+//     { name: "Sankalp ERP", tag: "Web · SaaS", desc: "Modern ERP suite for mid-market manufacturers." },
+//     { name: "Yatra Mobile", tag: "iOS · Android", desc: "Pilgrimage planner with offline maps and bookings." },
+//     { name: "Pragati Studio", tag: "UI/UX · Branding", desc: "Design system for a fast-growing fintech." },
+// ];
 
 export default function Home() {
     return (
@@ -99,7 +99,7 @@ export default function Home() {
             </section>
 
             {/* OUR WORK */}
-            <section className="bg-cream-card border-y border-divider-gold/20">
+            {/* <section className="bg-cream-card border-y border-divider-gold/20">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24">
                     <SectionHeader eyebrow="Our work speaks" title="Built with purpose" />
                     <div className="grid md:grid-cols-3 gap-6">
@@ -112,25 +112,25 @@ export default function Home() {
                                     <p className="text-xs uppercase tracking-widest text-gold font-semibold mb-2">{p.tag}</p>
                                     <h3 className="text-xl font-display mb-2">{p.name}</h3>
                                     <p className="text-sm text-brown mb-4">{p.desc}</p>
-                                    {/* <Link to="/portfolio" className="text-saffron font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
+                                    <Link to="/portfolio" className="text-saffron font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
                                         View Project <ArrowRight size={14} />
-                                    </Link> */}
+                                    </Link>
                                 </div>
                             </article>
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* TRUSTED BY */}
-            <section className="mx-auto max-w-7xl px-6 lg:px-8 py-20 text-center">
+            {/* <section className="mx-auto max-w-7xl px-6 lg:px-8 py-20 text-center">
                 <p className="text-xs font-semibold tracking-[0.25em] uppercase text-brown mb-8">Trusted by teams across India</p>
                 <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 opacity-80">
                     {["Sankalp Group", "Yatra Co.", "Pragati Labs", "Vidya Foundation", "Sevā Health", "Dharma Studios"].map((b) => (
                         <span key={b} className="font-display text-xl text-brown/70">{b}</span>
                     ))}
                 </div>
-            </section>
+            </section> */}
 
             {/* CTA */}
             <section className="mx-auto max-w-7xl px-6 lg:px-8 pb-24">

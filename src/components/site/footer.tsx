@@ -6,8 +6,6 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import {
     FaLinkedin,
     FaInstagram,
-    FaGithub,
-    FaXTwitter
 } from "react-icons/fa6";
 
 export default function Footer() {
@@ -48,7 +46,7 @@ export default function Footer() {
                         <li className="flex items-center gap-2"><Phone size={16} className="text-saffron" /> +91 00000 00000</li>
                     </ul>
                     <div className="flex gap-3 mt-5">
-                        {[FaLinkedin, FaInstagram, FaGithub, FaXTwitter].map((Icon, i) => (
+                        {[FaLinkedin, FaInstagram].map((Icon, i) => (
                             <a
                                 key={i}
                                 href="#"

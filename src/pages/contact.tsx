@@ -63,13 +63,13 @@ export default function Contact() {
                         <ul className="space-y-4 text-sm text-maroon">
                             <InfoRow icon={MapPin} label="Studio" value="Ahmedabad, Gujarat, India" />
                             <InfoRow icon={Mail} label="Email" value="hello@aksharcore.live" />
-                            <InfoRow icon={Phone} label="Phone" value="+91 00000 00000" />
+                            <InfoRow icon={Phone} label="Phone" value="+91 79840 17213" />
                             <InfoRow icon={Globe} label="Website" value="aksharcore.live" />
                         </ul>
                         <div className="mt-6 pt-6 border-t border-divider-gold/30">
                             <p className="text-xs uppercase tracking-widest text-brown mb-3">Find us elsewhere</p>
                             <div className="flex gap-3">
-                                {[Linkedin, Instagram, Github, Twitter].map((Icon, i) => (
+                                {[Linkedin, Instagram].map((Icon, i) => (
                                     <a key={i} href="#" className="p-2.5 rounded-full border border-divider-gold/40 text-saffron hover:bg-saffron hover:text-white hover:border-saffron transition">
                                         <Icon size={16} />
                                     </a>
@@ -78,14 +78,14 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className="card-warm overflow-hidden">
+                    {/* <div className="card-warm overflow-hidden">
                         <iframe
                             title="Ahmedabad"
                             src="https://www.google.com/maps?q=Ahmedabad,Gujarat,India&output=embed"
                             className="w-full h-72 border-0"
                             loading="lazy"
                         />
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </>

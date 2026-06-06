@@ -1,4 +1,4 @@
-import { Scale, HandHeart, Flame, TrendingUp, User } from "lucide-react";
+import { Scale, HandHeart, Flame, TrendingUp, } from "lucide-react";
 import SectionHeader from "../components/site/section-header";
 import LotusDivider from "../components/site/lotus-divider";
 
@@ -9,19 +9,19 @@ const values = [
     { icon: TrendingUp, title: "Pragati", subtitle: "Progress", desc: "Always learning, always improving — gracefully." },
 ];
 
-const team = [
-    { name: "Rishi Patel", role: "Founder & CEO" },
-    { name: "Aanya Shah", role: "Head of Design" },
-    { name: "Devansh Joshi", role: "Lead Engineer" },
-    { name: "Priya Mehta", role: "Cloud Architect" },
-];
+// const team = [
+//     { name: "Rishi Patel", role: "Founder & CEO" },
+//     { name: "Aanya Shah", role: "Head of Design" },
+//     { name: "Devansh Joshi", role: "Lead Engineer" },
+//     { name: "Priya Mehta", role: "Cloud Architect" },
+// ];
 
-const milestones = [
-    { year: "2021", text: "Aksharcore Technologies founded in Ahmedabad with three engineers and one principle." },
-    { year: "2022", text: "Shipped our first SaaS platform; began long-term partnerships with three founding clients." },
-    { year: "2023", text: "Grew the team to a tight-knit guild of designers, engineers, and cloud architects." },
-    { year: "2024", text: "Expanded into mobile and DevOps; serving clients across India and the diaspora." },
-];
+// const milestones = [
+//     { year: "2021", text: "Aksharcore Technologies founded in Ahmedabad with three engineers and one principle." },
+//     { year: "2022", text: "Shipped our first SaaS platform; began long-term partnerships with three founding clients." },
+//     { year: "2023", text: "Grew the team to a tight-knit guild of designers, engineers, and cloud architects." },
+//     { year: "2024", text: "Expanded into mobile and DevOps; serving clients across India and the diaspora." },
+// ];
 
 export default function About() {
     return (
@@ -71,7 +71,7 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="mx-auto max-w-7xl px-6 lg:px-8 py-24">
+            {/* <section className="mx-auto max-w-7xl px-6 lg:px-8 py-24">
                 <SectionHeader eyebrow="The people" title="A small guild of makers" />
                 <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
                     {team.map((m) => (
@@ -84,9 +84,9 @@ export default function About() {
                         </article>
                     ))}
                 </div>
-            </section>
+            </section> */}
 
-            <section className="bg-cream-card border-t border-divider-gold/20 py-24">
+            {/* <section className="bg-cream-card border-t border-divider-gold/20 py-24">
                 <div className="mx-auto max-w-3xl px-6 lg:px-8">
                     <SectionHeader eyebrow="Milestones" title="Our journey so far" />
                     <ol className="relative border-l-2 border-divider-gold/40 pl-8 space-y-10">
@@ -99,7 +99,7 @@ export default function About() {
                         ))}
                     </ol>
                 </div>
-            </section>
+            </section> */}
         </>
     )
 }
