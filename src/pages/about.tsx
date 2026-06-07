@@ -1,4 +1,4 @@
-import { Scale, HandHeart, Flame, TrendingUp, } from "lucide-react";
+import { Scale, HandHeart, Flame, TrendingUp, User } from "lucide-react";
 import SectionHeader from "../components/site/section-header";
 import LotusDivider from "../components/site/lotus-divider";
 
@@ -9,12 +9,12 @@ const values = [
     { icon: TrendingUp, title: "Pragati", subtitle: "Progress", desc: "Always learning, always improving — gracefully." },
 ];
 
-// const team = [
-//     { name: "Rishi Patel", role: "Founder & CEO" },
-//     { name: "Aanya Shah", role: "Head of Design" },
-//     { name: "Devansh Joshi", role: "Lead Engineer" },
-//     { name: "Priya Mehta", role: "Cloud Architect" },
-// ];
+const team = [
+    { name: "Parth Solanki", role: "Founder & CEO" },
+    // { name: "Aanya Shah", role: "Head of Design" },
+    // { name: "Devansh Joshi", role: "Lead Engineer" },
+    // { name: "Priya Mehta", role: "Cloud Architect" },
+];
 
 // const milestones = [
 //     { year: "2021", text: "Aksharcore Technologies founded in Ahmedabad with three engineers and one principle." },
@@ -71,9 +71,9 @@ export default function About() {
                 </div>
             </section>
 
-            {/* <section className="mx-auto max-w-7xl px-6 lg:px-8 py-24">
+            <section className="mx-auto max-w-7xl px-6 lg:px-8 py-24">
                 <SectionHeader eyebrow="The people" title="A small guild of makers" />
-                <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid sm:grid-cols-1 md:grid-cols-1 gap-6">
                     {team.map((m) => (
                         <article key={m.name} className="card-warm p-6 text-center">
                             <div className="mx-auto w-24 h-24 rounded-full bg-gradient-to-br from-saffron/30 to-gold/20 flex items-center justify-center mb-4">
@@ -84,7 +84,7 @@ export default function About() {
                         </article>
                     ))}
                 </div>
-            </section> */}
+            </section>
 
             {/* <section className="bg-cream-card border-t border-divider-gold/20 py-24">
                 <div className="mx-auto max-w-3xl px-6 lg:px-8">
