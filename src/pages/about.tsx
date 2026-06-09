@@ -32,7 +32,7 @@ export default function About() {
                     <h1 className="text-4xl md:text-6xl font-display text-maroon text-balance">About Aksharcore</h1>
                     <LotusDivider />
                     <p className="text-lg text-brown leading-relaxed text-balance">
-                        A technology house founded under Goe Swaminarayan principles — building with the belief
+                        A technology house founded under Shree Swaminarayan principles — building with the belief
                         that software, at its best, is an act of service.
                     </p>
                 </div>

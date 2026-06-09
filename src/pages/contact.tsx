@@ -1,10 +1,13 @@
 import { Globe, Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
-import { FaInstagram as Instagram, FaLinkedin as Linkedin } from "react-icons/fa6";
+import { FaInstagram as Instagram } from "react-icons/fa6";
 import LotusDivider from "../components/site/lotus-divider";
 
 export default function Contact() {
     const [sent, setSent] = useState(false);
+    const links = [
+        { to: "https://www.instagram.com/aksharcore.technology" as const, icon: Instagram }
+    ]
     return (
         <>
             <section className="lotus-bg py-20 md:py-24 text-center">
@@ -69,9 +72,9 @@ export default function Contact() {
                         <div className="mt-6 pt-6 border-t border-divider-gold/30">
                             <p className="text-xs uppercase tracking-widest text-brown mb-3">Find us elsewhere</p>
                             <div className="flex gap-3">
-                                {[Linkedin, Instagram].map((Icon, i) => (
-                                    <a key={i} href="#" className="p-2.5 rounded-full border border-divider-gold/40 text-saffron hover:bg-saffron hover:text-white hover:border-saffron transition">
-                                        <Icon size={16} />
+                                {links.map((i) => (
+                                    <a key={i.to} href={i.to} target="_blank" className="p-2.5 rounded-full border border-divider-gold/40 text-saffron hover:bg-saffron hover:text-white hover:border-saffron transition">
+                                        <i.icon size={16} />
                                     </a>
                                 ))}
                             </div>

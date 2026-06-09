@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
-import * as Icons from "lucide-react";
-
-console.log(Icons);
 import { Mail, Phone, MapPin } from "lucide-react";
 import {
-    FaLinkedin,
     FaInstagram,
 } from "react-icons/fa6";
 
 export default function Footer() {
+    const links = [
+        { to: "https://www.instagram.com/aksharcore.technology" as const, icon: FaInstagram }
+    ]
     return (
         <footer className="relative mt-24 bg-[oklch(0.245_0.09_40)] text-cream border-t-2 border-divider-gold">
             <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 grid gap-12 md:grid-cols-3">
@@ -46,14 +45,15 @@ export default function Footer() {
                         <li className="flex items-center gap-2"><Phone size={16} className="text-saffron" /> +91 79840 17213</li>
                     </ul>
                     <div className="flex gap-3 mt-5">
-                        {[FaLinkedin, FaInstagram].map((Icon, i) => (
+                        {links.map((i) => (
                             <a
-                                key={i}
-                                href="#"
+                                key={i.to}
+                                href={i.to}
                                 className="p-2 rounded-full border border-gold-pale/30 hover:border-saffron hover:bg-saffron/10 transition"
                                 aria-label="social link"
+                                target="_blank"
                             >
-                                <Icon size={16} className="text-gold-pale" />
+                                <i.icon size={16} className="text-gold-pale" />
                             </a>
                         ))}
                     </div>
