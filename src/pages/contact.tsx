@@ -91,8 +91,8 @@ export default function Contact() {
                                     className="w-full rounded-lg border border-divider-gold/40 bg-cream-inner px-4 py-3 text-sm text-maroon focus:outline-none focus:ring-2 focus:ring-saffron focus:border-saffron transition"
                                 />
                             </div>
-                            <button 
-                                type="submit" 
+                            <button
+                                type="submit"
                                 disabled={loading}
                                 className="btn-primary w-full sm:w-auto flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                             >
@@ -108,7 +108,7 @@ export default function Contact() {
                         <h2 className="text-2xl font-display mb-5">Reach us directly</h2>
                         <ul className="space-y-4 text-sm text-maroon">
                             <InfoRow icon={MapPin} label="Studio" value="Ahmedabad, Gujarat, India" />
-                            <InfoRow icon={Mail} label="Email" value="hello@aksharcore.live" />
+                            <InfoRow icon={Mail} label="Email" value="parth@aksharcore.live" />
                             <InfoRow icon={Phone} label="Phone" value="+91 79840 17213" />
                             <InfoRow icon={Globe} label="Website" value="aksharcore.live" />
                         </ul>
