@@ -2,9 +2,12 @@ import { Globe, Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { FaInstagram as Instagram } from "react-icons/fa6";
 import LotusDivider from "../components/site/lotus-divider";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
     const [sent, setSent] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState<string | null>(null);
     const links = [
         { to: "https://www.instagram.com/aksharcore.technology" as const, icon: Instagram }
     ]
@@ -33,9 +36,44 @@ export default function Contact() {
                         </div>
                     ) : (
                         <form
-                            onSubmit={(e) => { e.preventDefault(); setSent(true); }}
+                            onSubmit={async (e) => {
+                                e.preventDefault();
+                                setLoading(true);
+                                setError(null);
+
+                                const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+                                const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+                                const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+                                if (!serviceId || !templateId || !publicKey) {
+                                    setError("EmailJS configurations are missing in environment variables.");
+                                    setLoading(false);
+                                    return;
+                                }
+
+                                try {
+                                    await emailjs.sendForm(
+                                        serviceId,
+                                        templateId,
+                                        e.currentTarget,
+                                        { publicKey }
+                                    );
+                                    setSent(true);
+                                } catch (err: any) {
+                                    console.error("Failed to send email:", err);
+                                    setError(err?.text || "An unexpected error occurred while sending your message. Please try again.");
+                                } finally {
+                                    setLoading(false);
+                                }
+                            }}
                             className="space-y-4"
                         >
+                            {error && (
+                                <div className="rounded-lg bg-red-50 border border-red-200 p-4 text-center text-sm text-red-800">
+                                    <p className="font-semibold">Error sending message</p>
+                                    <p className="text-xs mt-1">{error}</p>
+                                </div>
+                            )}
                             <div className="grid sm:grid-cols-2 gap-4">
                                 <Field label="Name" name="name" />
                                 <Field label="Email" name="email" type="email" />
@@ -47,13 +85,18 @@ export default function Contact() {
                             <div>
                                 <label className="block text-xs font-semibold uppercase tracking-widest text-brown mb-1.5">Message</label>
                                 <textarea
+                                    name="message"
                                     required
                                     rows={5}
                                     className="w-full rounded-lg border border-divider-gold/40 bg-cream-inner px-4 py-3 text-sm text-maroon focus:outline-none focus:ring-2 focus:ring-saffron focus:border-saffron transition"
                                 />
                             </div>
-                            <button type="submit" className="btn-primary w-full sm:w-auto">
-                                Send Message <Send size={16} />
+                            <button 
+                                type="submit" 
+                                disabled={loading}
+                                className="btn-primary w-full sm:w-auto flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                            >
+                                {loading ? "Sending..." : "Send Message"} <Send size={16} />
                             </button>
                         </form>
                     )}
